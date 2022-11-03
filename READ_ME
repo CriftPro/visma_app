@@ -8,7 +8,7 @@ Apache Maven 3.8.6
 Web application is using Tomcat server.
 Server url : http://localhost:8080/
 
-To execute the program, launch in the target folder webapp-0.0.1-SNAPSHOT.jar
+To execute the program, launch in the Maven wraper maven-wrapper.jar
 
 Program build using Maven.
 
