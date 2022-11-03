@@ -1,0 +1,98 @@
+ { "users" :  [
+  {
+    "name": "Denielius",
+    "user_id": "1",
+    "meeting_list": [
+      "4"
+    ]
+  }
+]  ,   "meetings" :   [
+  {
+    "meeting_id": "1",
+    "name": "Intership meeting",
+    "responsiblePerson": {
+      "person_id": "10",
+      "person_name": "Denielius"
+    },
+    "description": "Disscuss work progress",
+    "type": "Live",
+    "category": "CodeMonkey",
+    "startMeetingDate": {
+      "time": "14:30",
+      "day": "2022-11-02"
+    },
+    "endMeetingDate": {
+      "time": "14:30",
+      "day": "2022-11-02"
+    },
+    "attendees": [
+      "1"
+    ]
+  },
+  {
+    "meeting_id": "2",
+    "name": "Intership meeting",
+    "responsiblePerson": {
+      "person_id": "10",
+      "person_name": "Denielius"
+    },
+    "description": "Disscuss work progress",
+    "type": "Live",
+    "category": "CodeMonkey",
+    "startMeetingDate": {
+      "time": "14:30",
+      "day": "2022-11-02"
+    },
+    "endMeetingDate": {
+      "time": "14:30",
+      "day": "2022-11-02"
+    },
+    "attendees": [
+      "1"
+    ]
+  },
+  {
+    "meeting_id": "3",
+    "name": "Intership meeting",
+    "responsiblePerson": {
+      "person_id": "10",
+      "person_name": "Denielius"
+    },
+    "description": "Disscuss work progress",
+    "type": "Live",
+    "category": "CodeMonkey",
+    "startMeetingDate": {
+      "time": "14:30",
+      "day": "2022-11-02"
+    },
+    "endMeetingDate": {
+      "time": "14:30",
+      "day": "2022-11-02"
+    },
+    "attendees": [
+      "1"
+    ]
+  },
+  {
+    "meeting_id": "4",
+    "name": "Intership meeting",
+    "responsiblePerson": {
+      "person_id": "10",
+      "person_name": "Denielius"
+    },
+    "description": "Disscuss work progress",
+    "type": "Live",
+    "category": "CodeMonkey",
+    "startMeetingDate": {
+      "time": "14:30",
+      "day": "2022-11-02"
+    },
+    "endMeetingDate": {
+      "time": "15:30",
+      "day": "2022-11-02"
+    },
+    "attendees": [
+      "1"
+    ]
+  }
+]  }

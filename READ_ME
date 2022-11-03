@@ -1,0 +1,99 @@
+
+This is web application to manage Visma’s internal meetings using Java Spring Boot, for intership.
+
+To compile requirements:
+Open JDK 19.0.1
+Apache Maven 3.8.6
+
+Web application is using Tomcat server.
+Server url : http://localhost:8080/
+
+To execute the program, launch in the target folder webapp-0.0.1-SNAPSHOT.jar
+
+Program build using Maven.
+
+Testing can be done, using POSTMAN.
+
+JSON forms/files can be found in the resources folder.
+Information is stored in storage.json file
+
+END API REST POINTS:
+
+The variables here are {user_id} and {meeting_id}, meeting id is created when we create the meeting room, while
+user id must be set up manually in JSON.
+
+-- For meeting creation --
+
+POST url = http://localhost:8080/users/{user_id}/meeting
+EXAMPLE http://localhost:8080/users/1/meeting
+JSON file meeting_creation_template.json
+
+-- For adding user to meeting --
+
+PUT url = http://localhost:8080/users/{user_id}/meeting/{meeting_id/add
+EXAMPLE http://localhost:8080/users/1/meeting/1/add
+JSON file meeting_adding_template.json
+
+-- For removing user from meeting --
+
+PUT url = http://localhost:8080/users/{user_id}/meeting/{meeting_id}/remove
+EXAMPLE http://localhost:8080/users/1/meeting/1/remove
+JSON file meeting_adding_template.json ( same template can be used)
+
+-- For deleting the meeting --
+
+DELETE url = http://localhost:8080/users/{user_id}/meeting/{meeting_id}
+EXAMPLE http://localhost:8080/users/1/meeting/1
+JSON NONE
+
+--For listing the meetings --
+GET http://localhost:8080/users/{user_id}/meeting
+EXAMPLE http://localhost:8080/users/1/meeting/
+JSON NONE
+
+--For filtering the meetings by DESCRIPTION --
+
+GET http://localhost:8080/users/{user_id}/meeting/description
+EXAMPLE http://localhost:8080/users/1/meeting/description
+JSON file meeting_filter.json -> we that file we use description for filtering, in others we use filterParameter
+
+--For filtering the meetings by RESPONSIBLE_PERSON --
+
+GET http://localhost:8080/users/{user_id}/meeting/resperson
+EXAMPLE http://localhost:8080/users/1/meeting/resperson
+JSON file meeting_filter.json
+filterParameters filters by name.
+
+--For filtering the meetings by CATEGORY --
+
+GET http://localhost:8080/users/{user_id}/meeting/category
+EXAMPLE http://localhost:8080/users/1/meeting/category
+JSON file meeting_filter.json
+filterParameters filters by category.
+
+--For filtering the meetings by TYPE --
+
+GET http://localhost:8080/users/{user_id}/meeting/type
+EXAMPLE http://localhost:8080/users/1/meeting/type
+JSON file meeting_filter.json
+filterParameters filters by category.
+
+--For filtering the meetings by DATA --
+
+GET http://localhost:8080/users/{user_id}/meeting/afterdate
+EXAMPLE http://localhost:8080/users/1/meeting/afterdate
+JSON file meeting_filter.json
+We use filterDate parameters for this.
+
+--For filtering the meetings by Attendies number, minimal amount --
+
+GET http://localhost:8080/users/{user_id}/meeting/attends
+EXAMPLE http://localhost:8080/users/1/meeting/attends
+JSON file meeting_filter.json
+We use filterParameters which later translated into integer, orignally write it as String.
+
+--
+Done
+After testing, you can see changes in storage.json
+
+
